@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mainPage</title>
+  <link rel="stylesheet" type="text/css" href="../../static/css/mainPageCategoryPage.css">
+  <link rel="stylesheet" type="text/css" href="../../static/css/headerFooter.css">
+  <link rel="stylesheet" type="text/css" href="../../static/css/headerFooterMedia.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+</head>
+<body>
+
+
+  <div class="header">
+    <div class="container">
+      <div class="hTopSubNav">
+        <div id="mainLogo">
+          <a href="mainPage.html">
+            <img class="miKupon" src="../../static/images/МiKupon.png" alt="">
+            <img class="miKuponLittle" src="../../static/images/miKuponLittle.png" alt="">
+          </a>
+        </div>
+        <div class="hTopSityLink">
+          <a class="sityName" href="#">Санкт-Петербург</a>
+        </div>
+        <div class="hTopRNav">
+          <div class="hTopMenuToggle"> 
+            <div href="#" class="menuMobileDropdown">
+                <img class="menuToggleImage" src="../../static/images/menuToggleImage.png" alt="">
+                <div class="menuMobileDropdownContent">
+
+                  <ul class="mobileMenuList">
+                    <img class="mobileMenuClose" src="../../static/images/closeIcon.png" alt="">
+                    <li class="mobileMenuItem">
+                      <a href="../enterPages/authorisation.html" class="mobileMenuLink">Вход</a>
+                    </li>
+                    <li class="mobileMenuItem">
+                      <a href="../enterPages/registration.html" class="mobileMenuLink">Регистрация</a>
+                    </li>
+                    <li class="mobileMenuItem">
+                      <a href="#openModal" class="mobileMenuLink">Категории</a>
+                    </li>
+                    <li class="mobileMenuItem">
+                      <a href="#" class="mobileMenuLink mobileMenuLinkSity">г.Москва</a>
+                    </li>
+                  </ul>
+
+                </div>
+            </div>
+           </div>
+          
+          <a href="#" class="forUsersLink" >Пользователям</a>
+          <a href="#" class="forPartnersLink">Партнерам</a>
+        </div>
+      </div>
+      <div class="hTopContainer">
+        <div class="hNavSearchContainer">
+          <input type="text" class="hNavSearch" placeholder="найти скидки">
+          <button class="hNavSearchButton">Поиск</button>
+        </div>
+        <div class="authRegFormContainer">
+          <div id="authRegFormInner" class="authRegFormInner">
+            <div class="mainAuth">
+              <a href="../enterPages/authorisation.html" onclick="accScript()">Вход</a>
+            </div>
+            <div class="mainReg">
+              <a href="../enterPages/registration.html" onclick="accScript()">Регистрация</a>
+            </div>
+          </div>
+          <div id="mainAccInfoContainer" class="mainAccInfoContainer">
+            <div class="authAccNameCont">
+              <p class="authAccName">citycup@yandex.ru</p>
+              <img src="../../static/images/authAccArrow.png" alt="">
+            </div>
+            <div class="authAccBalanceCont">
+              <p class="authAccBalance">4 500 руб.</p>
+              <p class="authAccBonuses">2 500 б.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hNavigationContainer">
+    <div class="container">
+      <ul class="hNavbar">
+        <!-- <div class="navName categoryModalToggle">
+          <span>Категории:</span>
+        </div> -->
+        <div class="navNameContainer">
+          <a href="#openModal" class="navName disabledLink">Категории<span>:</span></a>
+          <img class="navNameArrow" src="../../static/images/Rectangle200.png" alt="">
+          <div class="hNavSearchContainerMobile">
+              <input type="text" class="hNavSearch" placeholder="найти скидки">
+              <button class="hNavSearchButton">Поиск</button>
+          </div>
+        </div>
+        
+        <div id="openModal" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Категории</h3>
+                <a href="#close" title="Close" class="close">
+                  <img src="../../static/images/Rectangle59.png" alt="">
+                </a>
+              </div>
+              <div class="modal-body">
+                <div class="modalToggleContainer">
+                  
+                  <button type="button" class="modalCollapseToggle">Популярные
+                    <img src="../../static/images/collapseArrowDown.png" class="collapseArrow colapseModalArrow " id="collapseArrowDown" alt="">
+                    <img src="../../static/images/collapseArrowUp.png" class="collapseArrow colapseModalArrow " id="collapseArrowUp" alt="">
+                  </button>
+                  <div class="modalCollapseContent">
+                    <button type="button" class="modalCollapseInnerToggle">АКТИВНЫЙ ОТДЫХ</button>
+                    <div class="modalCollapseInnerContent">
+                      <a class="modalCollapseInnerLink" href="#">Развлечения</a>
+                      <a class="modalCollapseInnerLink" href="#">Красота</a>
+                      <a class="modalCollapseInnerLink" href="#">Медицина</a>
+                      <a class="modalCollapseInnerLink" href="#">Авто</a>
+                      <a class="modalCollapseInnerLink" href="#">Обучение</a>
+                      <a class="modalCollapseInnerLink" href="#">Отдых</a>
+                    </div>
+                    <button type="button" class="modalCollapseInnerToggle">ОТДЫХ</button>
+                    <div class="modalCollapseInnerContent">
+                      <a class="modalCollapseInnerLink" href="#">Развлечения</a>
+                      <a class="modalCollapseInnerLink" href="#">Красота</a>
+                      <a class="modalCollapseInnerLink" href="#">Медицина</a>
+                      <a class="modalCollapseInnerLink" href="#">Авто</a>
+                      <a class="modalCollapseInnerLink" href="#">Обучение</a>
+                      <a class="modalCollapseInnerLink" href="#">Отдых</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modalToggleContainer">
+                  <button type="button" class="modalCollapseToggle">Развлечения</button>
+                  <div class="modalCollapseContent">
+                  </div>
+                </div>
+                <div class="modalToggleContainer">
+                  <button type="button" class="modalCollapseToggle">Красота</button>
+                  <div class="modalCollapseContent">
+                  </div>
+                </div>
+                <div class="modalToggleContainer">
+                  <button type="button" class="modalCollapseToggle">Обучение</button>
+                  <div class="modalCollapseContent">
+                  </div>
+                </div>
+                <div class="modalToggleContainer">
+                  <button type="button" class="modalCollapseToggle">Авто</button>
+                  <div class="modalCollapseContent">
+                  </div>
+                </div>
+                <div class="modalToggleContainer">
+                  <button type="button" class="modalCollapseToggle">Отдых</button>
+                  <div class="modalCollapseContent">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="dropdownToggle" href="#" onmouseover="
+            document.getElementById('dropdownContent').style.display='flex'
+          ">Лучшие</a>
+        <a class="dropdownToggle" href="#">Красота</a>
+        <a class="dropdownToggle" href="#">Здоровье</a>
+        <a class="dropdownToggle" href="#">Развлечения</a>
+        <a class="dropdownToggle" href="#">Обучение</a>
+        <a class="dropdownToggle" href="#">Авто</a>
+        <a class="dropdownToggle" href="#">Отдых</a>
+        <a class="dropdownToggle" href="#">Еда</a>
+        <a class="dropdownToggle" href="#">Разное</a> 
+      </ul>
+    </div>
+  </div>  
+
+
+
+
+  
+  <div class="dropdownContent" id="dropdownContent">
+    <ul class="dropdownList">
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownTitleLink AllStock">ВСЕ АКЦИИ</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownTitleLink">АКТИВНЫЙ ОТДЫХ</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Развлечения</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Красота</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Медицина</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Авто</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Обучение</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Отдых</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Еда</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Разное</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Популярные</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Развлечения</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Красота</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Медицина</a>
+      </li>
+    </ul>
+    <ul class="dropdownList">
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownTitleLink">ОТДЫХ</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Популярные</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Развлечения</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Красота</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Медицина</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Авто</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Обучение</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownTitleLink">18+</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">еда</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Разное</a>
+      </li>
+    </ul>
+    <ul class="dropdownList">
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownTitleLink">БИЛЕТЫ</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Развлечения</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Красота</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Медицина</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Авто</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Обучение</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Отдых</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Еда</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Разное</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownTitleLink">ПОЛЕТЫ</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Отдых</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Еда</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Разное</a>
+      </li>
+    </ul>
+    <ul class="dropdownList">
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownTitleLink">ИГРЫ</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Развлечения</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Красота</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Медицина</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Авто</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Обучение</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Отдых</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Еда</a>
+      </li>
+      <li class="dropdownItem">
+        <a href="#" class="navDropdownLink">Разное</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+  <div class="mainContainer">
+
+      <div class="sliderContainer action-slider scroll autostart plugin_processed">
+
+      </div>
+      <div class="majorContainer">
+        <!-- Категория товаров -->
+        <div class="categoryContainer">
+          <div class="container"> 
+          <a href="#" class="buttonScrollUp">
+            <img src="../../static/images/buttonScrollUp.png" alt="">
+          </a>
+          <a href="#" class="toFavoriteButton">
+            <img src="../../static/images/toFavoriteIcon.png" alt="">
+          </a>
+          <p class="categoryName">Лучшие <span class="underlined">(150)</span> </p>
+          <div class="cardGroup deal-container">
+            <!-- Карточка товара -->
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+             <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+             <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+             <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+
+
+
+          </div>
+          <div class="toCategoryContainer">
+            <a href="categoryPage.html" class="toCategoryLink">
+              <p class="toCategoryLinkText">В категорию</p>   
+              <img class="toCategoryLinkImage"  src="../../static/images/arrowRight.png" alt="">
+            </a>
+          </div>
+        </div>
+        </div>
+        <!-- Категория товаров -->
+        <!-- Категория товаров -->
+        <div class="categoryContainer">
+          <div class="container"> 
+          <a href="#" class="buttonScrollUp">
+            <img src="../../static/images/buttonScrollUp.png" alt="">
+          </a>
+          <a href="#" class="toFavoriteButton">
+            <img src="../../static/images/toFavoriteIcon.png" alt="">
+          </a>
+          <p class="categoryName">Лучшие <span class="underlined">(150)</span> </p>
+          <div class="cardGroup deal-container">
+            <!-- Карточка товара -->
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+             <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+             <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+             <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+
+
+
+          </div>
+          <div class="toCategoryContainer">
+            <a href="categoryPage.html" class="toCategoryLink">
+              <p class="toCategoryLinkText">В категорию</p>   
+              <img class="toCategoryLinkImage"  src="../../static/images/arrowRight.png" alt="">
+            </a>
+          </div>
+        </div>
+        </div>
+        <!-- Категория товаров -->
+        <!-- Категория товаров -->
+        <div class="categoryContainer">
+          <div class="container"> 
+          <a href="#" class="buttonScrollUp">
+            <img src="../../static/images/buttonScrollUp.png" alt="">
+          </a>
+          <a href="#" class="toFavoriteButton">
+            <img src="../../static/images/toFavoriteIcon.png" alt="">
+          </a>
+          <p class="categoryName">Лучшие <span class="underlined">(150)</span> </p>
+          <div class="cardGroup deal-container">
+            <!-- Карточка товара -->
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+            <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+             <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+             <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+             <!-- Карточка товара -->
+
+            <div class="card sale-box-wrapper  " >
+              <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+              </div>
+              <div class="cardTouchable" onclick="location.href='productPage.html'">
+                <img  src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара -->
+
+
+
+          </div>
+          <div class="toCategoryContainer">
+            <a href="categoryPage.html" class="toCategoryLink">
+              <p class="toCategoryLinkText">В категорию</p>   
+              <img class="toCategoryLinkImage"  src="../../static/images/arrowRight.png" alt="">
+            </a>
+          </div>
+        </div>
+        </div>
+        <!-- Категория товаров -->
+        
+      </div>
+
+      
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <div class="footer">
+    <div class="footerFlex">
+      <p class="footerInfo">
+        MiKupon™ - сервис коллективных покупок, который дает уникальную возможность развлекаться и пользоваться самыми разнообразными услугами в вашем городе (кино, салоны, спа, клубы, театры и многое другое) по самым низким ценам и с самыми высокими скидками. Купив купон на скидку или сертификат, вы откроете себе дверь в мир разумной и приятной экономии. Либо с нами - либо дороже, экономьте вместе с нами!
+      </p>
+      <ul class="footerNavContainer">
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">О компании</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Пользователям</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Обратиться</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Оферта</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Партнерам</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Поддержка</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Правила</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Всё о купонах</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModal').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModal').style.marginLeft = '0px';
+      });
+    });
+var coll4 = document.getElementsByClassName("modalCollapseInnerToggle");
+var i;
+for (i = 0; i < coll4.length; i++) {
+  coll4[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "flex") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "flex";
+    }
+  });
+}
+var arrowD = document.getElementById("collapseArrowDown");
+var arrowU = document.getElementById("collapseArrowUp");
+var coll = document.getElementsByClassName("modalCollapseToggle");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      arrowU.style.display = "none";
+      arrowD.style.display = "block";
+    } else {
+      content.style.display = "block";
+      arrowU.style.display = "block";
+      arrowD.style.display = "none";
+    }
+  });
+}
+function star(object){
+  if(object.getAttribute('src') == "../../static/images/favoriteCardImage.png"){
+    object.setAttribute('src','../../static/images/notFavoriteCardImage.png');
+  }else{ 
+    object.setAttribute('src','../../static/images/favoriteCardImage.png');
+  }   
+}
+
+
+$(function() {
+  $('.buttonScrollUp').click(function() {
+    $("html, body").animate({
+      scrollTop:0
+    },1000);
+  })
+})
+$(window).scroll(function() {
+  if ($(this).scrollTop()>50) {
+    $('.buttonScrollUp').fadeIn();
+  }
+  else {
+    $('.buttonScrollUp').fadeOut();
+  }
+});
+    // document.getElementByClassName('dropdownToggle').onmouseover = function(){
+    //   document.getElementByClassName('dropdownContent').style.display="flex";
+    // }
+
+
+    // var card = 6; // - количество отображаемых новостей
+    // $(".card:not(:lt("+card+"))").hide();
+
+  </script>
+</body>
+</html>
+

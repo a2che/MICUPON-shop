@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>productPage</title>
+  <link rel="stylesheet" type="text/css" href="../../static/css/productPage.css">
+  <link rel="stylesheet" type="text/css" href="../../static/css/headerFooter.css">
+  <link rel="stylesheet" type="text/css" href="../../static/css/headerFooterMedia.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+</head>
+<body class="mainpage">
+
+
+  <div class="header">
+    <div class="container">
+      <div class="hTopSubNav" id="header-bar">
+        <div id="mainLogo">
+          <a href="mainPage.html">
+            <img class="miKupon" src="../../static/images/МiKupon.png" alt="">
+            <img class="miKuponLittle" src="../../static/images/miKuponLittle.png" alt="">
+          </a>
+        </div>
+        <div class="hTopSityLink">
+          <a class="sityName" href="#">Санкт-Петербург</a>
+        </div>
+        <div class="hTopRNav">
+          <div class="hTopMenuToggle"> 
+
+             <div href="#" class="menuMobileDropdown">
+                <img class="menuToggleImage" src="../../static/images/menuToggleImage.png" alt="">
+                <div class="menuMobileDropdownContent">
+
+                  <ul class="mobileMenuList">
+                    <img class="mobileMenuClose" src="../../static/images/closeIcon.png" alt="">
+                    <li class="mobileMenuItem">
+                      <a href="#" class="mobileMenuLink">Личный кабинет</a>
+                    </li>
+                    <li class="mobileMenuItem">
+                      <a href="#openModal" class="mobileMenuLink">Категории</a>
+                    </li>
+                    <li class="mobileMenuItem">
+                      <a href="#" class="mobileMenuLink">Выход</a>
+                    </li>
+                    <li class="mobileMenuItem">
+                      <a href="#" class="mobileMenuLink mobileMenuLinkSity">г.Москва</a>
+                    </li>
+                    <li class="mobileMenuItem">
+                      <div id="mainAccInfoContainer" class="mainAccInfoContainer mainAccInfoContainerMobileMenu">
+                        <div class="authAccNameCont">
+                          <p class="authAccName">citycup@yandex.ru</p>
+                          <img src="../../static/images/authAccArrow.png" alt="">
+                        </div>
+                        <div class="authAccBalanceCont">
+                          <p class="authAccBalance">4 500 руб.</p>
+                          <p class="authAccBonuses">2 500 б.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    
+
+                  </ul>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           </div>
+          
+          <a href="#" class="forUsersLink" >Пользователям</a>
+          <a href="#" class="forPartnersLink">Партнерам</a>
+        </div>
+      </div>
+      <div class="hTopContainer">
+        <div class="hNavSearchContainer" id="search-bar">
+          <input type="text" class="hNavSearch" placeholder="найти скидки">
+          <button class="hNavSearchButton">Поиск</button>
+        </div>
+        <div class="authRegFormContainer">
+          <div id="authRegFormInner" class="authRegFormInner">
+            <div class="mainAuth">
+              <a href="../enterPages/authorisation.html" onclick="accScript()">Вход</a>
+            </div>
+            <div class="mainReg">
+              <a href="../enterPages/registration.html" onclick="accScript()">Регистрация</a>
+            </div>
+          </div>
+          <div id="mainAccInfoContainer" class="mainAccInfoContainer">
+            <div class="authAccNameCont">
+              <p class="authAccName">citycup@yandex.ru</p>
+              <img src="../../static/images/authAccArrow.png" alt="">
+            </div>
+            <div class="authAccBalanceCont">
+              <p class="authAccBalance">4 500 руб.</p>
+              <p class="authAccBonuses">2 500 б.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hNavigationContainer" id="menu-top">
+    <div class="container">
+      <ul class="hNavbar">
+        <!-- <div class="navName categoryModalToggle">
+          <span>Категории:</span>
+        </div> -->
+        <div class="navNameContainer">
+          <a href="#openModal" class="navName disabledLink">Категории<span>:</span></a>
+          <img class="navNameArrow" src="../../static/images/Rectangle200.png" alt="">
+          <div class="hNavSearchContainerMobile">
+              <input type="text" class="hNavSearch" placeholder="найти скидки">
+              <button class="hNavSearchButton">Поиск</button>
+          </div>
+        </div>
+        
+        <div id="openModal" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Категории</h3>
+                <a href="#close" title="Close" class="close">
+                  <img src="../../static/images/Rectangle59.png" alt="">
+                </a>
+              </div>
+              <div class="modal-body">
+                <div class="modalToggleContainer">
+
+                  <button type="button" class="modalCollapseToggle">Популярные
+                    <img src="../../static/images/collapseArrowDown.png" class="collapseArrow colapseModalArrow " id="collapseArrowDown" alt="">
+                    <img src="../../static/images/collapseArrowUp.png" class="collapseArrow colapseModalArrow " id="collapseArrowUp" alt="">
+                  </button>
+                  <div class="modalCollapseContent">
+                    <button type="button" class="modalCollapseInnerToggle">АКТИВНЫЙ ОТДЫХ</button>
+                    <div class="modalCollapseInnerContent">
+                      <a class="modalCollapseInnerLink" href="#">Развлечения</a>
+                      <a class="modalCollapseInnerLink" href="#">Красота</a>
+                      <a class="modalCollapseInnerLink" href="#">Медицина</a>
+                      <a class="modalCollapseInnerLink" href="#">Авто</a>
+                      <a class="modalCollapseInnerLink" href="#">Обучение</a>
+                      <a class="modalCollapseInnerLink" href="#">Отдых</a>
+                    </div>
+                    <button type="button" class="modalCollapseInnerToggle">ОТДЫХ</button>
+                    <div class="modalCollapseInnerContent">
+                      <a class="modalCollapseInnerLink" href="#">Развлечения</a>
+                      <a class="modalCollapseInnerLink" href="#">Красота</a>
+                      <a class="modalCollapseInnerLink" href="#">Медицина</a>
+                      <a class="modalCollapseInnerLink" href="#">Авто</a>
+                      <a class="modalCollapseInnerLink" href="#">Обучение</a>
+                      <a class="modalCollapseInnerLink" href="#">Отдых</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modalToggleContainer">
+                  <button type="button" class="modalCollapseToggle">Развлечения</button>
+                  <div class="modalCollapseContent">
+                  </div>
+                </div>
+                <div class="modalToggleContainer">
+                  <button type="button" class="modalCollapseToggle">Красота</button>
+                  <div class="modalCollapseContent">
+                  </div>
+                </div>
+                <div class="modalToggleContainer">
+                  <button type="button" class="modalCollapseToggle">Обучение</button>
+                  <div class="modalCollapseContent">
+                  </div>
+                </div>
+                <div class="modalToggleContainer">
+                  <button type="button" class="modalCollapseToggle">Авто</button>
+                  <div class="modalCollapseContent">
+                  </div>
+                </div>
+                <div class="modalToggleContainer">
+                  <button type="button" class="modalCollapseToggle">Отдых</button>
+                  <div class="modalCollapseContent">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="dropdownToggle" href="#" onmouseover="
+            document.getElementById('dropdownContent').style.display='flex'
+          ">Лучшие</a>
+        <a class="dropdownToggle" href="#">Красота</a>
+        <a class="dropdownToggle" href="#">Здоровье</a>
+        <a class="dropdownToggle" href="#">Развлечения</a>
+        <a class="dropdownToggle" href="#">Обучение</a>
+        <a class="dropdownToggle" href="#">Авто</a>
+        <a class="dropdownToggle" href="#">Отдых</a>
+        <a class="dropdownToggle" href="#">Еда</a>
+        <a class="dropdownToggle" href="#">Разное</a> 
+      </ul>
+    </div>
+  </div>     
+  </div>
+
+
+
+<div id="openModal2" class="modal">
+  <div class="modalDialog">
+    <div class="modalContent">
+      <div class="modal-header">
+        <h3 class="modal-title">Выберите нужный купон:</h3>
+        <a href="#close2" title="Close" class="close">
+          <img src="../../static/images/Rectangle59.png" alt="">
+        </a>
+      </div>
+      <div class="modal-body">    
+        <div class="couponCardGroup couponCardModalGroup">
+              <div class="couponCardCollapseToggle">
+                
+                <p class="cardCollapseOffers">3 предложения</p>
+                <button type="button" class="couponCardCollapseToggle">Билеты на будние дни
+                  <img src="../../static/images/collapseArrowDown.png" class="collapseArrow collapseModalArrow " id="collapseArrowDown" alt="">
+                  <img src="../../static/images/collapseArrowUp.png" class="collapseArrow collapseModalArrow collapseModalArrowUp" id="collapseArrowUp " alt="">
+                </button>
+
+
+                <div class="collapseCouponCardContent">
+                  <div class="couponCard couponCardNoBorders">
+                    <label class="radioContainer">Купон на прогулку для одного с обедом или ужином с питанием по комплексу Standard на теплоходе River Palace
+                      <input type="radio" checked="checked" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="couponCardPrice">
+                      <p class="previousPrice">4 500 р.</p>
+                      <p class="realPrice">2 190 р.</p>
+                      <p class="couponPrice">Купон за 1 400 р.</p>
+                    </div>
+                    <div class="cashbackContainer">
+                      <p class="cashbackPrice">Кешбек 170 р.*</p>
+                    </div>
+                    <div class="couponCardBorder"></div>
+                  </div>
+
+
+
+
+
+                </div>
+              </div>
+        </div>
+        <div class="couponCardGroup couponCardModalGroup">
+              <div class="couponCardCollapseToggle">
+                
+                <p class="cardCollapseOffers">3 предложения</p>
+                <button type="button" class="couponCardCollapseToggle">Билеты на будние дни
+                  <img src="../../static/images/collapseArrowDown.png" class="collapseArrow collapseModalArrow " id="collapseArrowDown" alt="">
+                  <img src="../../static/images/collapseArrowUp.png" class="collapseArrow collapseModalArrow  collapseModalArrowUp" id="collapseArrowUp " alt="">
+                </button>
+
+
+                <div class="collapseCouponCardContent">
+                  <div class="couponCard couponCardNoBorders">
+                    <label class="radioContainer">Купон на прогулку для одного с обедом или ужином с питанием по комплексу Standard на теплоходе River Palace
+                      <input type="radio" checked="checked" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="couponCardPrice">
+                      <p class="previousPrice">4 500 р.</p>
+                      <p class="realPrice">2 190 р.</p>
+                      <p class="couponPrice">Купон за 1 400 р.</p>
+                    </div>
+                    <div class="cashbackContainer">
+                      <p class="cashbackPrice">Кешбек 170 р.*</p>
+                    </div>
+                    <div class="couponCardBorder"></div>
+                  </div>
+                  <div class="couponCard couponCardNoBorders">
+                    <label class="radioContainer">Купон на прогулку для одного с обедом или ужином с питанием по комплексу Standard на теплоходе River Palace
+                      <input type="radio" checked="checked" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="couponCardPrice">
+                      <p class="previousPrice">4 500 р.</p>
+                      <p class="realPrice">2 190 р.</p>
+                      <p class="couponPrice">Купон за 1 400 р.</p>
+                    </div>
+                    <div class="cashbackContainer">
+                      <p class="cashbackPrice">Кешбек 170 р.*</p>
+                    </div>
+                    <div class="couponCardBorder"></div>
+                  </div>
+                  <div class="couponCard couponCardNoBorders">
+                    <label class="radioContainer">Купон на прогулку для одного с обедом или ужином с питанием по комплексу Standard на теплоходе River Palace
+                      <input type="radio" checked="checked" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="couponCardPrice">
+                      <p class="previousPrice">4 500 р.</p>
+                      <p class="realPrice">2 190 р.</p>
+                      <p class="couponPrice">Купон за 1 400 р.</p>
+                    </div>
+                    <div class="cashbackContainer">
+                      <p class="cashbackPrice">Кешбек 170 р.*</p>
+                    </div>
+                    <div class="couponCardBorder"></div>
+                  </div>
+                  <div class="couponCard couponCardNoBorders">
+                    <label class="radioContainer">Купон на прогулку для одного с обедом или ужином с питанием по комплексу Standard на теплоходе River Palace
+                      <input type="radio" checked="checked" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="couponCardPrice">
+                      <p class="previousPrice">4 500 р.</p>
+                      <p class="realPrice">2 190 р.</p>
+                      <p class="couponPrice">Купон за 1 400 р.</p>
+                    </div>
+                    <div class="cashbackContainer">
+                      <p class="cashbackPrice">Кешбек 170 р.*</p>
+                    </div>
+                    <div class="couponCardBorder"></div>
+                  </div>
+                  <div class="couponCard couponCardNoBorders">
+                    <label class="radioContainer">Купон на прогулку для одного с обедом или ужином с питанием по комплексу Standard на теплоходе River Palace
+                      <input type="radio" checked="checked" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="couponCardPrice">
+                      <p class="previousPrice">4 500 р.</p>
+                      <p class="realPrice">2 190 р.</p>
+                      <p class="couponPrice">Купон за 1 400 р.</p>
+                    </div>
+                    <div class="cashbackContainer">
+                      <p class="cashbackPrice">Кешбек 170 р.*</p>
+                    </div>
+                    <div class="couponCardBorder"></div>
+                  </div>
+                  <div class="couponCard couponCardNoBorders">
+                    <label class="radioContainer">Купон на прогулку для одного с обедом или ужином с питанием по комплексу Standard на теплоходе River Palace
+                      <input type="radio" checked="checked" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="couponCardPrice">
+                      <p class="previousPrice">4 500 р.</p>
+                      <p class="realPrice">2 190 р.</p>
+                      <p class="couponPrice">Купон за 1 400 р.</p>
+                    </div>
+                    <div class="cashbackContainer">
+                      <p class="cashbackPrice">Кешбек 170 р.*</p>
+                    </div>
+                    <div class="couponCardBorder"></div>
+                  </div>
+
+
+
+
+
+                </div>
+              </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    <div class="modalButtonContainer">
+      <button class="goToPayButton goToPayButtonModal">
+        <img src="../../static/images/cardPay.png" alt="">
+        <p>Перейти к оплате</p>
+      </button>
+    </div>
+
+    
+
+
+</div>
+
+
+
+
+<div class="buttonFixedBottomContainer">
+  <a href="#openModal2" class="buttonFixedBottom">Выбрать купон</a>
+</div>
+
+
+  <div class="mainContent">
+    <div class="container">
+      <div class="mainFlexcontainer">
+        <div class="mainContainer">
+          <p class="productTitle">Мастер-класс по пилотированию с 30-минутным ознакомительным полетом и профессиональный пилотаж от Союза Авиаторов "Крылья" со скидкой</p>
+          <p class="productName">Центр эффективного похудения и красоты “Идеаль”</p>
+          <div class="ratingContainer">
+            <div class="ratingStars">
+              <img src="../../static/images/ratingStarFull.png" alt="">
+              <img src="../../static/images/ratingStarFull.png" alt="">
+              <img src="../../static/images/ratingStarFull.png" alt="">
+              <img src="../../static/images/ratingStarFull.png" alt="">
+              <img src="../../static/images/ratingStarEmpty.png" alt="">
+            </div>
+            <p class="ratingNumber">(150)</p>
+            <a href="#" class="allAdressesInfo">Всего 12 адресов</a>
+          </div>
+          <div class="cardImageCont">
+            <img src="../../static/images/cardImageBig.png" alt="" class="cardImageBig">
+          </div>
+          <div class="actionTimerContainerMobile">
+            <div class="timerContent">
+              <img src="../../static/images/timerClock.png" alt="">
+              <p class="timerText">До завершения продаж</p>
+              <p class="timerDuration">5 дн. 08:25:21</p>
+            </div>
+            <div class="timerContent">
+              <img src="../../static/images/timerCalendar.png" alt="">
+              <p class="timerText">Срок действия акций</p>
+              <p class="timerDuration">31.02.2020</p>
+            </div>
+          </div>
+
+          <div class="shareIconsListMobile">
+              <img src="../../static/images/shareIcon1.png" alt="" class="shareIconImageMobile">
+              <img src="../../static/images/vkIcon.png" alt="" class="shareIconImageMobile">
+              <img src="../../static/images/shareIcon3.png" alt="" class="shareIconImageMobile">
+              <img src="../../static/images/shareIcon8.png" alt="" class="shareIconImageMobile">
+              <img src="../../static/images/shareIcon4.png" alt="" class="shareIconImageMobile">
+              <img src="../../static/images/shareIcon5.png" alt="" class="shareIconImageMobile">
+              <img src="../../static/images/shareIcon6.png" alt="" class="shareIconImageMobile">
+              <img src="../../static/images/shareIcon7.png" alt="" class="shareIconImageMobile">
+            </div> 
+
+
+
+
+
+
+          <div class="cardMenu">
+            <p class="cardMenuItem">Условия акции</p>
+            <p class="cardMenuItem">Адреса</p>
+            <p class="cardMenuItem">Отзывы (200)</p>
+            <p class="cardMenuItem cardMenuItemInfo">i</p>
+          </div>
+          <div class="cardMenucontent">
+            <p class="cardMenuText">
+              Купон предоставляет право на скидку до 67% на целый день развлечений от партнера по акции: Аквапарк "Аква-Юна" 
+            </p>
+            <p class="cardMenuText">
+              <b>При наличии купона Вы доплатите на месте:</b>
+            </p>
+            <p class="cardMenuText">
+              400 руб. вместо 800 руб. за детский билет в выходные или будни
+              600 руб. вместо 1 800 руб. за взрослый билет в будни
+              900 руб. вместо 1 800 руб. за взрослый билет в выходные
+            </p>
+            <p class="cardMenuText">
+              В стоимость услуги входит: 
+              <br>аквапарк
+              <br>сауна
+              <br>хаммам
+              <br>тренажерный зал
+              <br>бильярд
+              <br> джакузи
+              <br>Срок действия купона: до 30.01.2020
+              <br>Обязательна предварительная запись по тел.: +7(495)579-21-84, +7(495)795-54-13
+            </p>
+            
+            <button class="cardMenuCollapseToggle">Условия полностью
+              <img id="collapseArrowUp" class="collapseArrowInText" src="../../static/images/collapseArrowUp.png" alt="">
+              <img id="collapseArrowDown" class="collapseArrowInText" src="../../static/images/collapseArrowDown.png" alt="">
+            </button>
+
+            <div class="cardMenuCollapseContent">
+              <p class="cardMenuText cardMenuTextDNone">
+                При посещении аквапарка необходимо иметь при себе сменную обувь и полотенце
+                Билет действует на целый день развлечений в аквапарке
+                Дополнительно оплачивается: 
+                залог за ключ - 300 руб., при выходе его возвращают
+                При посещении аквапарка дети до 16 лет должны находиться только под наблюдением взрослых, которые несут за них полную ответственность
+                Один взрослый может сопровождать не более двух детей
+                Лицо, ответственное за детей, должно обеспечить нахождение детей на территории аквапарка в спасательных жилетах или надувных нарукавниках, и несет полную ответственность при несоблюдении данного правила
+                1 купон распространяется на 1 человека
+                Если вы идете вдвоем или компанией, необходимо приобретать купон на каждого
+                Вы можете приобрести неограниченное количество купонов для себя и в подарок
+                Обязательно предъявляйте распечатанный купон
+                Купоны по данной акции возврату не подлежат
+                Акция действует для лиц от 18 лет
+              </p>
+            </div>
+            
+            <button class="cardMenuCollapseToggle">Предупреждения
+              <img id="collapseArrowUp" class="collapseArrowInText collapseArrowInText2" src="../../static/images/collapseArrowUp.png" alt="">
+              <img id="collapseArrowDown" class="collapseArrowInText collapseArrowInText2" src="../../static/images/collapseArrowDown.png" alt="">
+            </button>
+
+            <div class="cardMenuCollapseContent">
+              <p class="cardMenuText cardMenuTextDNone">
+                Уважаемые пользователи, просим вас соблюдать ряд простых правил, чтобы обезопасить себя от возможных мошенников и получать качественные услуги:
+              </p>
+          </div>
+
+            
+          </div>
+        </div>
+
+
+        <div class="sideContainer">
+          <div class="actionTimerContainer">
+            <div class="timerContent">
+              <img src="../../static/images/timerClock.png" alt="">
+              <p class="timerText">До завершения продаж:</p>
+              <p class="timerDuration">5 дн. 08:25:21</p>
+            </div>
+            <div class="timerContent">
+              <img src="../../static/images/timerCalendar.png" alt="">
+              <p class="timerText">Срок действия акций</p>
+              <p class="timerDuration">31.02.2020</p>
+
+            </div>
+          </div>
+          <div class="chooseCouponAllContainer">
+            <div class="chooseCouponContainer">
+              <p class="chooseCouponTitle">Выберите предложение (всего 15): </p>
+              <div class="couponCard">
+                <label class="radioContainer">Купон на прогулку для одного с обедом или ужином с питанием по комплексу Standard на теплоходе River Palace
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <div class="couponCardPrice">
+                  <p class="previousPrice">4 500 р.</p>
+                  <p class="realPrice">2 190 р.</p>
+                  <p class="couponPrice">Купон за 1 400 р.</p>
+                </div>
+                <div class="cashbackContainer">
+                  <p class="cashbackPrice">Кешбек 170 р.*</p>
+                </div>
+              </div>
+              <div class="couponCard">
+                <label class="radioContainer">Купон на прогулку для одного с обедом или ужином с питанием по комплексу Standard на теплоходе River Palace
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <div class="couponCardPrice">
+                  <p class="previousPrice">45 500 р.</p>
+                  <p class="realPrice">12 190 р.</p>
+                  <p class="couponPrice">Купон за 1 400 р.</p>
+                </div>
+                <div class="cashbackContainer">
+                  <p class="cashbackPrice">Кешбек 170 р.*</p>
+                </div>
+              </div>
+              <div class="couponCard">
+                <label class="radioContainer">Купон на прогулку для одного с обедом или ужином с питанием по комплексу Standard на теплоходе River Palace
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <div class="couponCardPrice">
+                  <p class="previousPrice">4 500 р.</p>
+                  <p class="realPrice">2 190 р.</p>
+                  <p class="couponPrice">Купон за 1 400 р.</p>
+                </div>
+                <div class="cashbackContainer">
+                  <p class="cashbackPrice">Кешбек 170 р.*</p>
+                </div>
+              </div>
+            </div>
+            <div class="couponCardGroup">
+              <div class="couponCardCollapseToggle">
+
+                
+                <button type="button" class="couponCardCollapseToggle">Вечерние экскурсии (2)
+                <img src="../../static/images/collapseArrowDown.png" class="collapseArrow collapseArrowCoupon" id="collapseArrowDown" alt="">
+                <img src="../../static/images/collapseArrowUpn.png" class="collapseArrow  collapseArrowCoupon" id="collapseArrowUp" alt="">
+              </button>
+
+                <div class="collapseCouponCardContent">
+                  <div class="couponCard">
+                    <label class="radioContainer">Купон на прогулку для одного с обедом или ужином с питанием по комплексу Standard на теплоходе River Palace
+                      <input type="radio" checked="checked" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="couponCardPrice">
+                      <p class="previousPrice">4 500 р.</p>
+                      <p class="realPrice">2 190 р.</p>
+                      <p class="couponPrice">Купон за 1 400 р.</p>
+                    </div>
+                    <div class="cashbackContainer">
+                      <p class="cashbackPrice">Кешбек 170 р.*</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <a class="showAllCouponsButton">показать все купоны (15)</a>
+          <button class="goToPayButton">
+            <img src="../../static/images/cardPay.png" alt="">
+            <p>Перейти к оплате</p>
+          </button>
+          <button class="buyAsPresentButton">
+            <img src="../../static/images/buyAsPresentImage.png" alt="">
+            <p>Купить в подарок</p>
+          </button>
+          </div>
+          <div class="shareIconsContainer">
+            <p class="shareIconsTitle">Поделиться:</p>
+            <div class="shareIconsList">
+              <img src="../../static/images/shareIcon1.png" alt="" class="shareIconImage">
+              <img src="../../static/images/vkIcon.png" alt="" class="shareIconImage">
+              <img src="../../static/images/shareIcon3.png" alt="" class="shareIconImage">
+              <img src="../../static/images/shareIcon8.png" alt="" class="shareIconImage">
+              <img src="../../static/images/shareIcon4.png" alt="" class="shareIconImage">
+              <img src="../../static/images/shareIcon5.png" alt="" class="shareIconImage">
+              <img src="../../static/images/shareIcon6.png" alt="" class="shareIconImage">
+              <img src="../../static/images/shareIcon7.png" alt="" class="shareIconImage">
+            </div> 
+          </div>
+          <div class="adContainerA">
+            <img src="../../static/images/adImage.png" alt="">
+          </div>
+          <div class="adContainerB">
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="lowerContainer">
+        <div class="container">
+          <div class="lowerContainerItem">
+            <h1 class="contentTitle">Адреса</h1>
+            <div class="adressesCard">
+                <div class="adressesContent">
+                  <p class="adressesText adressesTextBold">Цветной бульвар <span class="metroSpan">М</span></p>
+                  <p class="adressesText">г.Москва, Садовая-Самотечная ул., д.16, стр.1</p>
+                  <p class="adressesText">пн-пт: с 09:00 до 21:00, сб: с 09:00 до 15:00. вс: выходной</p>
+                  <p class="adressesText">+7 (495) 699-17-79</p>
+                  <p class="adressesText">+7 (495) 699-46-13</p>
+                  <p class="adressesText">+7 (925) 890-70-33</p>
+                </div>
+                <div class="adressesContent">
+                  <p class="adressesText adressesTextBold">Цветной бульвар <span class="metroSpan">М</span></p>
+                  <p class="adressesText">г.Москва, Садовая-Самотечная ул., д.16, стр.1</p>
+                  <p class="adressesText">пн-пт: с 09:00 до 21:00, сб: с 09:00 до 15:00. вс: выходной</p>
+                  <p class="adressesText">+7 (495) 699-17-79</p>
+                  <p class="adressesText">+7 (495) 699-46-13</p>
+                  <p class="adressesText">+7 (925) 890-70-33</p>
+                </div>
+                <div class="adressesContent">
+                  <p class="adressesText adressesTextBold">Цветной бульвар <span class="metroSpan">М</span></p>
+                  <p class="adressesText">г.Москва, Садовая-Самотечная ул., д.16, стр.1</p>
+                  <p class="adressesText">пн-пт: с 09:00 до 21:00, сб: с 09:00 до 15:00. вс: выходной</p>
+                  <p class="adressesText">+7 (495) 699-17-79</p>
+                  <p class="adressesText">+7 (495) 699-46-13</p>
+                  <p class="adressesText">+7 (925) 890-70-33</p>
+                </div>
+                <div class="adressesContent">
+                  <p class="adressesText adressesTextBold">Цветной бульвар <span class="metroSpan">М</span></p>
+                  <p class="adressesText">г.Москва, Садовая-Самотечная ул., д.16, стр.1</p>
+                  <p class="adressesText">пн-пт: с 09:00 до 21:00, сб: с 09:00 до 15:00. вс: выходной</p>
+                  <p class="adressesText">+7 (495) 699-17-79</p>
+                  <p class="adressesText">+7 (495) 699-46-13</p>
+                  <p class="adressesText">+7 (925) 890-70-33</p>
+                </div>
+                <div class="adressesContent">
+                  <p class="adressesText adressesTextBold">Цветной бульвар <span class="metroSpan">М</span></p>
+                  <p class="adressesText">г.Москва, Садовая-Самотечная ул., д.16, стр.1</p>
+                  <p class="adressesText">пн-пт: с 09:00 до 21:00, сб: с 09:00 до 15:00. вс: выходной</p>
+                  <p class="adressesText">+7 (495) 699-17-79</p>
+                  <p class="adressesText">+7 (495) 699-46-13</p>
+                  <p class="adressesText">+7 (925) 890-70-33</p>
+                </div>
+
+            </div>
+
+          </div>
+
+
+
+
+          <div class="lowerContainerItem">
+            <h1 class="contentTitle">Отзывы (200)</h1>
+            <p class="reviewsText">Пока отзывов нет</p>
+          </div>
+          <div class="lowerContainerItem">
+            <h1 class="contentTitle">О заведении</h1>
+            <p class="AboutCompanyText">Юридическая информация: ООО “Компания” <br>
+            Лицензия: ...</p>
+            <p class="AboutCompanyText">Центр эффективного ...</p>
+            <a href="#" class="AboutCompanyText">Подробнее (Центр эффективного похудения и красоты “Идеаль”)</a>
+          </div>
+          <div class="lowerContainerItem">
+            <h1 class="contentTitle">Похожие акции</h1>
+          
+            <div class="cardGroup cardGroupProductPage">
+                <!-- Карточка товара -->
+              <div class="card">
+                <img src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+                </div>
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+                <!-- Карточка товара -->
+                <!-- Карточка товара -->
+              <div class="card">
+                <img src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+                </div>
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+                <!-- Карточка товара -->
+                <!-- Карточка товара -->
+              <div class="card">
+                <img src="../../static/images/cardImage.png" alt="" class="cardImage">
+                <div class="discount">
+                  <p class="discountPrice">50%</p>
+                </div>
+                <div class="favoriteCardIcon">
+                  <img class="cardStar" src="../../static/images/notFavoriteCardImage.png" alt="" onclick="star(this)">
+                </div>
+                <p class="cardText">
+                  Вечерняя экскурсия по Москве "Московских окон негасимый свет" 
+                </p>
+                <div class="cardInfo">
+                  <p class="metroName">М Домодедовская (+12)</p>
+                  <p class="cardPrice">от 5 000 р.</p>
+                </div>
+              </div>
+                <!-- Карточка товара -->
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footerFlex">
+      <p class="footerInfo">
+        MiKupon™ - сервис коллективных покупок, который дает уникальную возможность развлекаться и пользоваться самыми разнообразными услугами в вашем городе (кино, салоны, спа, клубы, театры и многое другое) по самым низким ценам и с самыми высокими скидками. Купив купон на скидку или сертификат, вы откроете себе дверь в мир разумной и приятной экономии. Либо с нами - либо дороже, экономьте вместе с нами!
+      </p>
+      <ul class="footerNavContainer">
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">О компании</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Пользователям</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Обратиться</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Оферта</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Партнерам</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Поддержка</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Правила</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Всё о купонах</a>
+        </li>
+        <li class="footerNavItem">
+          <a class="footerNavLink" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+
+
+<script type="text/javascript">
+// Модальное окно, на mainPage.html абсолютно такой-же код, может поехать
+// модальное окно "Категории"
+document.addEventListener("DOMContentLoaded", function(){
+  var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+  console.log(scrollbar);
+  document.querySelector('[href="#openModal"]').addEventListener('click',function(){
+    document.body.style.overflow = 'hidden';
+    document.querySelector('#openModal').style.marginLeft = scrollbar;
+  });
+  document.querySelector('[href="#close"]').addEventListener('click',function(){
+    document.body.style.overflow = 'visible';
+    document.querySelector('#openModal').style.marginLeft = '0px';
+  });
+});
+// модальное окно "купонов"
+document.addEventListener("DOMContentLoaded", function(){
+  var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+  console.log(scrollbar);
+  document.querySelector('[href="#openModal2"]').addEventListener('click',function(){
+    document.body.style.overflow = 'hidden';
+    document.querySelector('#openModal2').style.marginLeft = scrollbar;
+  });
+  document.querySelector('[href="#close2"]').addEventListener('click',function(){
+    document.body.style.overflow = 'visible';
+    document.querySelector('#openModal2').style.marginLeft = '0px';
+  });
+});
+
+
+  var ent  = document.getElementById('authRegFormInner');
+    var acc = document.getElementById('mainAccInfoContainer');
+
+
+
+
+  function accScript(){
+    if (ent.style.display="flex") { 
+      ent.style.display="none";
+      acc.style.display="block";
+    }
+    
+  }
+
+
+
+
+function star(object){
+  if(object.getAttribute('src') == "../../static/images/favoriteCardImage.png"){
+    object.setAttribute('src','../../static/images/notFavoriteCardImage.png');
+  }else{ 
+    object.setAttribute('src','../../static/images/favoriteCardImage.png');
+  }   
+}
+
+
+
+
+
+var coll1 = document.getElementsByClassName("couponCardCollapseToggle");
+var i;
+var arrowD = document.getElementById("collapseArrowDown");
+var arrowU = document.getElementById("collapseArrowUp");
+
+for (i = 0; i < coll1.length; i++) {
+  coll1[i].addEventListener("click", function() {
+    this.classList.toggle("activeCollapse");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      arrowU.style.display = "none";
+      arrowD.style.display = "block";
+
+    }else {
+      content.style.display = "block";
+      arrowU.style.display = "block";
+      arrowD.style.display = "none";
+    }
+  });
+}
+
+
+
+
+var coll2 = document.getElementsByClassName("cardMenuCollapseToggle");
+var i;
+
+
+
+
+for (i = 0; i < coll2.length; i++) {
+  coll2[i].addEventListener("click", function() {
+    this.classList.toggle("activeCardMenu");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</body>
+</html>
+

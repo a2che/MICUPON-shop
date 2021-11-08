@@ -1,0 +1,964 @@
+body{
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Source Sans Pro;
+}
+
+
+
+.underlined{
+  text-decoration: underline;
+}
+
+.container{
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.header{
+  width: 100%;
+  background-color: #FBFBFB;
+  margin: 0 auto;
+  flex: 0 0 auto; 
+  margin-bottom: 32px;
+}
+.hTopSubNav{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 24px;
+}
+#mainLogo{
+}
+.miKupon{
+    display: block;
+  }
+.miKuponLittle{
+  display: none;
+}
+.hTopSityLink{
+  padding-top: 32px;
+  padding-left: 16px;
+  
+}
+.hTopMenuToggle{
+  display: none;  
+}
+.menuToggleImage{
+  max-width: 35px;
+}
+
+.sityName{
+  color: #999999;
+  font-size: 20px;
+  margin-left:  15px;
+}
+.sityNameMobile{
+  display: none;
+}
+.hTopRNav{
+  
+  position: absolute;
+  padding-top: 32px;
+  padding-left: 16px;
+  font-size: 20px;
+  right: 0;
+}
+
+.authRegFormContainerMobile{
+  display: none;
+}
+
+.navNameContainer{
+  display: flex;
+  align-items: center;
+}
+.navNameArrow{
+  display: none;
+  width: 20px;
+  padding-left: 6px;
+  padding-top: 2px;
+
+}
+.hNavSearchContainerMobile{
+    display: none;
+  }
+
+.hTopRNav>a:first-child{
+  margin-right: 20px;
+}
+
+
+
+.miKuponLittle{
+  min-height: 74px;
+}
+
+.forUsersLink,.forPartnersLink{
+  text-decoration: none;
+  color: #999999;
+  font-size: 20px;
+  
+}
+.forUsersLink:hover,.forPartnersLink:hover{
+  text-decoration: underline;
+}
+.forUsersLink{
+  margin-right: 15px;
+}
+.mainContainer{
+  position: relative; 
+  flex: 1 0 auto;
+  z-index: 1;
+}
+.hTopContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom:  32px;
+}
+.hNavSearchContainer{
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+}
+.hNavSearch {
+  
+  background-clip: border-box;
+    flex-grow: 1;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    border: 1px solid #8CC977;
+    float: left;
+  box-shadow:0px 6px 8px -5px rgba(50, 50, 50, 0.75);
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.hNavSearch:focus,.hNavSearchButton:focus{
+  outline: none;
+}
+.hNavSearchButton {
+  
+  background-clip: border-box;
+    float: right;
+    flex-grow: 0;
+    width: 100px;
+    padding: 12px;
+    background: #4AAC28;
+    color: white;
+    font-size: 16px;
+    border: 1px solid #4AAC28;
+    border-left: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.hNavSearchButton:hover {
+   background: #3A881F;
+   border: 1px solid #3A881F;
+}
+.authRegFormContainer{
+  padding-left: 15px;
+  width: 100%;
+  max-width: 232px;
+  border: 1px solid #5ECC38;
+  border-radius: 5px;
+  vertical-align: middle;
+  box-shadow:0px 4px 6px 0px rgba(50, 50, 50, 0.2);
+}
+
+
+.authRegFormInner{
+  display: flex;
+}
+
+
+.mainAccInfoContainer{
+  display: none;
+  cursor: pointer;
+}
+.mainAccInfoContainerMobileMenu{
+  display: block !important;
+  z-index: 11111;
+  border: 1px solid #5ECC38;
+  border-radius: 5px;
+}
+.mobileMenuItem:last-child{
+  padding-bottom: 0;
+}
+
+.authAccNameCont{
+  padding-top: 2px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4px;
+}
+.authAccName{
+  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 113.18%;
+  color: #4AAC28;
+  margin: 0;
+  padding-right: 15px;
+
+}
+.authAccBalanceCont{
+  display: flex;
+  justify-content: center;
+}
+.authAccBalance{
+  border-right: 1px solid #DD9200;
+}
+.authAccBalance,.authAccBonuses{
+  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 113.18%;
+  color: #DD9200;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainAuth,.mainReg{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;  
+  width: 100%;
+}
+.mainAuth>a,.mainReg>a{
+  color: #868181;
+  text-decoration: none;
+}
+.mainAuth>a:hover,.mainReg>a:hover{
+  border-bottom: 1px solid black;
+}
+.mainAuth{
+  padding-left: 6px;
+  border-right: 2px solid #868181;
+}
+.mainReg{
+  padding-right: 25px;
+  padding-left: 18px;
+}
+.hNavigationContainer{
+  background-color: #F5F5F5;
+}
+.navName{
+  padding-top:  0px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #666666;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navName>span{
+  display: inline-block;
+}
+.hNavbar{
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left:   0;
+  margin: 0;  
+  width:  100%;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  min-height: 44px;
+  align-items: center;
+}
+
+
+
+
+
+
+.categoryDropdownToggle{
+
+}
+
+.categoryDropdown{
+  display: none;
+}
+
+
+
+
+
+
+
+
+.categoryDropdownItem{
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 113.18%;
+  color: #4E4D4D;
+  margin-bottom: 22px;
+}
+
+.categoryCollapseToggle{
+
+}
+
+
+
+.dropdownToggle{
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+.dropdownToggle:hover{
+  color: #46B465;
+}
+.dropdownContent{
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+  border-radius: 5px;
+  border: 1px solid #C9C8C8;
+  justify-content: space-around;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 950px;
+  top: 470px;
+  left: 50%;
+  margin-left: -476px;
+  margin-top: -243px;
+}
+.dropdownList{
+  padding: 0;
+  margin: 0;
+}
+.dropdownItem{
+  list-style-type: none;
+  margin-bottom: 12px;
+}
+.navDropdownTitleLink{
+  text-decoration: none;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 113.18%;
+  color: #46B465;
+}
+.navDropdownLink{
+  text-decoration: none;
+  
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 113.18%;
+  color: #4E4D4D;
+}
+.navDropdownTitleLink:hover,.navDropdownLink:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  width: 100%;
+
+  background-color: #FBFBFB;
+  margin: 0 auto;
+  flex:0 0 auto;
+  padding-top: 28px;
+  padding-bottom: 14px;
+}
+.footerFlex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.footerInfo{
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 113.18%;
+  text-align: justify;
+  color: #000000;
+  max-width:474px;
+  margin: 0;
+  
+}
+
+.footerNavContainer{
+  width:  100%;
+  max-width: 450px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 0;
+margin: 0;
+padding-top: 2px;
+
+}
+.footerNavItem{
+  width: 27%;
+  list-style-type: none;
+
+
+}
+
+.footerNavItem:nth-child(3),.footerNavItem:nth-child(6),.footerNavItem:last-child{ 
+
+}
+
+
+.footerNavLink{
+  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 113.18%;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+
+
+
+/*categoryPageCSS*/
+
+.hFilterContainer{
+  background-color:#F1F1F1 ;
+
+
+}
+.hNavbarFilter{
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+.filterName{
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+
+}
+.filterGroups{
+  padding-left: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+
+}
+.filterGroup{
+  list-style-type: none;
+  display: flex;
+  border-right: 1px solid #D8D4D4;
+  justify-content: center;
+}
+
+
+.filterGroup:last-child{
+  border-right: none;
+}
+
+.filterItem{
+  padding-top:16px;
+  padding-right: 52px;
+  padding-left: 52px;
+}
+.filterImageChildren{
+  width: 30px;
+  padding-top: 4px;
+}
+.filterItem:hover{
+  background-color: #B8B4B4;
+  transition: 500ms;
+}
+
+.filterItemNoPadding{
+  padding-right: 16px;
+  padding-left: 16px;
+  filter: grayscale(100%);
+  filter: brightness(0);
+}
+.filterItemNoPadding:hover{
+  filter: grayscale(0%);
+  filter: brightness(1);
+}
+
+
+
+.filterItemNoPadding:last-child{
+  margin-right: 28px;
+}
+.filterImage{
+  max-width: 35px;
+  max-height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modalContent{
+    height: 100vh;
+    border: none;
+    border-radius: 0px;
+    background-color: white;
+  }
+
+
+
+
+
+
+
+
+
+/* свойства модального окна по умолчанию */
+    .modal {
+      position: fixed;
+      /* фиксированное положение */
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      /* цвет фона */
+      z-index: 1050;
+      opacity: 0;
+      /* по умолчанию модальное окно прозрачно */
+      -webkit-transition: opacity 400ms ease-in;
+      -moz-transition: opacity 400ms ease-in;
+      transition: opacity 400ms ease-in;
+      /* анимация перехода */
+      pointer-events: none;
+      /* элемент невидим для событий мыши */
+    }
+
+    /* при отображении модального окно */
+    .modal:target {
+      opacity: 1;
+      pointer-events: auto;
+      overflow-y: auto;
+    }
+
+    /* ширина модального окна и его отступы от экрана */
+    .modal-dialog {
+      position: relative;
+      width: auto;
+      margin: 10px;
+    }
+
+    @media (min-width: 576px) {
+      .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto;
+      }
+    }
+
+    /* свойства для блока, содержащего контент модального окна */
+    .modal-content {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-color: #fff;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, .2);
+      outline: 0;
+      padding: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .modal-content {
+
+      }
+    }
+
+    /* свойства для заголовка модального окна */
+    .modal-header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 15px;
+     
+    }
+
+    .modal-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 113.18%;
+
+  color: #4E4D4D;
+    }
+
+    /* свойства для кнопки "Закрыть" */
+    .close {
+      max-width: 25px;
+      float: right;
+      font-family: sans-serif;
+
+      font-weight: 700;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      opacity: .5;
+      text-decoration: none;
+    }
+    .close>img{
+      width: 100%;
+    }
+    /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+    .close:focus,
+    .close:hover {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      opacity: .75;
+    }
+
+    /* свойства для блока, содержащего основное содержимое окна */
+    .modal-body {
+      position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 15px;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+
+
+    .modalCollapseToggle{
+      
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 20px;
+      background-color: white;
+      position: relative;
+
+      padding-left: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .modalToggleContainer:not(:last-child){
+      border-bottom: 1px solid #F5F5F5;
+    }
+    .modalCollapseContent{
+      display: none;
+    }
+
+.modalToggleContainer{
+  position: relative;
+  padding-left: 42px;
+  z-index: 10;
+
+}
+.collapseModalArrowUp{
+  display: none;
+}
+#collapseArrowUp,#collapseArrowDown{
+
+  position: absolute;
+  z-index: 666;
+  margin-left:150px;
+
+}
+.toCategoryLinkImage{
+    height:   20px;
+    padding-top:  3px;
+    padding-left:   10px;
+}
+.navNameArrow,#collapseArrowUp,#collapseArrowDown{
+  max-width:  20px;
+}
+
+.collapseArrowCoupon{
+  top: 6px !important;
+}
+
+.modalCollapseInnerToggle {
+  
+  background-color: white;
+  color: #46B465;
+  cursor: pointer;
+  padding: 18px;
+  padding-left: 24px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin: 0;
+  padding-top: 0;
+}
+
+.modalCollapseInnerContent {
+  padding: 0 18px;
+  padding-left: 46px;
+  display: none;
+  overflow: hidden;
+  flex-direction: column;
+
+}
+
+.modalCollapseInnerLink{
+  
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 113.18%;
+  color: #4E4D4D;
+  text-decoration: none;
+  margin-bottom: 14px;
+
+}
+
+
+
+
+.collapseArrowInText{
+  padding-left:   0 !important  ;
+  right: 0 !important ;
+  left:   24px; 
+  top: -2px;
+}
+.collapseArrowInText2{
+  left: 4px;
+}
+
+/*arrows*/
+.collapseModalArrow{
+  max-width: 20px;
+}
+
+.collapseArrow{
+  position: absolute;
+  right: 35px;
+  top: 12px;
+}
+#collapseArrowUp, #collapseArrowDown {
+    position: absolute;
+    z-index: 666;
+   
+}
+#collapseArrowUp{
+  display: none;
+  z-index: 5;
+}
+#collapseArrowDown{
+  display: block;
+  z-index: 5;
+
+}
+
+.colapseModalArrow{
+  padding-top: 5px;
+  z-index: 2 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*menuMobileDropdown*/
+
+.menuMobileDropdown {
+    position: relative;
+    display: inline-block;
+    cursor:pointer;
+}
+
+.menuMobileDropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1000;
+    left: -200px;
+    border-radius: 5px;
+}
+
+.menuMobileDropdown:hover .menuMobileDropdownContent {
+    display: block;
+}
+.mobileMenuList{
+  list-style-type: none;
+  padding: 0;
+}
+.mobileMenuItem{
+  padding-bottom: 24px;
+}
+.mobileMenuLink{
+  color: #4E4D4D;
+}
+.mobileMenuLinkSity{
+  color: #48C51C;
+}
+
+.mobileMenuClose{
+  position: absolute;
+  max-width: 20px;
+  right: 15px;
+}

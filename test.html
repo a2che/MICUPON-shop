@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+    <title>...</title>
+    </head>
+    <style>
+        #dropdown {display: none;}
+    </style>
+<body>
+ 
+    <a href="#" id="dropdownToggle">Каталог</a>
+    <div id="dropdown">
+        Разделы и подразделы
+    </div>
+                
+    <script>
+    var dropdownToggle     = document.getElementById("dropdownToggle"),
+        dropdown    = document.getElementById("dropdown");
+ 
+    dropdownToggle.onmouseover = function(){
+        dropdown.style.display="block";
+    };
+    dropdown.onmouseout = function(e){
+        var evt = e||window.event,
+            rel = evt.relatedTarget || evt.toElement;
+        if (rel.id !== "dropdownToggle") {
+            dropdown.style.display="none";
+        }
+    };
+    </script>
+</body>
+</html>

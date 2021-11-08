@@ -1,0 +1,282 @@
+body{
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Source Sans Pro;
+}
+.container{
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+}
+.underlined{
+  text-decoration: underline;
+}
+
+.sliderContainer{
+  width: 100%;
+  height: 80px;
+  background-color: #E9ECED;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  max-width: 950px;
+}
+.mainContainer{
+}
+.categoryContainer:not(:first-child){
+  width:  100%;
+  margin: 0 auto  ;  
+  padding-top: 24px;
+}
+.categoryContainer:nth-child(even){
+  background-color: #FBFBFB;
+}
+.categoryName{
+font-weight: bold;
+font-size: 20px;
+line-height: 113.18%;
+margin-bottom: 18px;
+margin-top: 0;
+}
+
+
+.buttonScrollUp{
+  display: none;
+  position: fixed;
+  margin-left: 1000px;
+  top: 580px;
+  filter: grayscale(5);
+  cursor: pointer;
+}
+.buttonScrollUp:hover{
+  filter: grayscale(0);
+  transition: 500ms;
+}
+
+.toFavoriteButton{
+  position: fixed;
+  margin-left: 1000px;
+  top: 650px;
+  filter: grayscale(5);
+  cursor: pointer;
+  
+}
+.toFavoriteButton>img{
+  width: 50px;
+  height: 50px;
+}
+.toFavoriteButton:hover{
+  filter: grayscale(0);
+  transition: 500ms;
+}
+
+.cardGroup{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.card{
+  position: relative;
+  max-width: 290px;
+  margin-bottom: 26px;
+}
+.cardImage{
+  margin-bottom: 12px;
+}
+.discount{
+  background-color: #C7FF50;
+  opacity: 50%;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  text-align: center;
+}
+.discountPrice{
+  font-family: Alef;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #585858;
+  margin: 0;
+}
+.favoriteCardIcon{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.cardText{
+  text-align: justify;
+  margin: 0;
+  color: 585858;
+  margin-bottom: 12px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 113.18%;
+}
+.cardInfo{
+  display: flex;
+  justify-content: space-between;
+}
+.metroName{
+  font-style: normal;
+  font-weight: normal;
+  padding-top: 2px;
+  font-size: 14px;
+  line-height: 113.18%;
+  color: #585858;
+  margin: 0;
+}
+.metroName::first-letter{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 113.18%;
+  color: #4AAC28;
+}
+.cardPrice{
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 113.18%;
+  text-align: right;
+  color: #585858;
+}
+.toCategoryContainer{
+  display: flex;
+  padding-bottom:   24px;
+  justify-content: flex-end;
+}
+.toCategoryLink{
+  display: flex;
+  font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 113.18%;
+margin-right: 4px;
+text-decoration-line: underline;
+color: #585858;
+}
+.toCategoryLinkText{
+  margin: 0;
+}
+.toCategoryLinkImage{
+  cursor: pointer;
+}
+
+
+
+.paginationContainer{
+
+  margin: 0 auto;
+}
+.paginationNav{
+
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+.pageItem{
+  list-style-type: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  line-height: 40px; 
+  text-align: center;  
+}
+
+
+.pageItemActive{
+  background-color: #459E26;
+}
+.pageItemActive .pageLink{
+  color: white;
+}
+
+
+.pageLink{
+  text-decoration: none;
+  color:black;
+  font-size: 20px;
+}
+.pageItemNext{
+  list-style-type: none;
+  text-decoration: underline;
+  line-height: 40px; 
+  text-align: center;  
+  margin-left: 15px;
+  
+}
+.pageItemNext>a{
+  color: #459E26;
+  font-weight: bold;
+}
+
+
+.paginationInfo{
+  font-size: 14px;
+line-height: 113.18%;
+text-align: center;
+color: #868181;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

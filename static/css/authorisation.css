@@ -1,0 +1,426 @@
+body{
+	margin: 0;
+}
+.flex{
+	display: flex;
+	justify-content: center;
+}
+.container{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+}
+.containerGift{
+	padding-top: 32px;
+}
+
+
+.textGiftLeft{
+	text-align: left;
+
+}
+.main,.mainRegWithMailContainer{
+	position: relative;
+	background-color: #FBFBFB;
+	min-height: 555px;
+	width: 100%;
+	max-width: 420px;
+	margin: 0;
+	border-radius: 5px;
+}
+.mainSmall{
+	width: 100%;
+	max-width: 320px;
+	padding: 0 32px;
+}
+
+
+#logo{
+	max-height:  72px;
+	margin-top: -16px;
+}
+.title{
+	font-size: 24px;
+	margin: 0;
+}
+.titleGift{
+	margin-top: -4px;
+}
+.allText{
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 113.18%;
+	color: #8A8A8A;
+
+}
+.text2{
+	margin-bottom: 12px !important;
+	margin-top: 12px !important;
+}
+.forgPassLinkContainer{
+	margin: 0;
+}
+#forgPassLink{
+	text-decoration: none;
+	color: #4AAC28;
+	margin-bottom: 12px;
+	
+}
+.allText{
+	margin-top: 0;
+}
+.mainRegWithMailLogo{
+	margin-top: 44px;
+}
+.registrationLinkCont{
+	margin: 0;
+	margin-bottom: 32px;
+}
+#registrationLink{
+	text-decoration: none;
+	color: #4AAC28;
+	font-size: 20px;
+}
+#registrationLink:hover, #forgPassLink:hover{
+	text-decoration: underline;
+}
+
+#mailInput{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 16px;
+	border: 1px solid #F74141;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 20px;
+	margin-top: 14px;
+	margin-bottom: 20px;
+
+}
+#mailInput:focus{
+	border: 1px solid #949090;
+	outline: none;
+}
+#mailInput::-webkit-input-placeholder{
+	text-align: center;
+	color: #C7C7C7;
+}
+#passInput{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 16px;
+	border: 1px solid #F74141;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 20px;
+	margin-bottom: 24px;
+}
+#passInput:focus{
+	border: 1px solid #949090;
+	outline: none;
+}
+#passInput::-webkit-input-placeholder{
+	text-align: center;
+	color: #C7C7C7;
+}
+.enter>p{
+	padding: 15px;
+}
+.icons{
+	justify-content: space-around;
+	width: 75%;
+	margin: 0 auto;
+	margin-bottom: 12px;
+
+}
+.icons>img{
+	cursor: pointer;
+	width: 16%;
+}
+.enterButton{
+	background-color:  #4AAC28;
+	font-size: 20px;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	margin-top: 18px;
+	text-align: center;
+	color: white;
+	width: 100%;
+	max-width: 340px;
+	cursor: pointer;
+	padding: 12px;
+}
+.enterButtonBig{
+	padding: 24px;
+}
+.enterButton:active{
+	outline: none;
+	background-color: green;
+}
+.enterButton:focus{
+	outline: none;
+}
+.enterButton:hover{
+	background-color: #3A881F;
+	transition: 500ms;
+}
+
+.forgPassMailInput{
+	margin-top: 24px;
+}
+#sendMailButton{
+	background-color:  #4AAC28;
+	font-size: 24px;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	margin-top: 64px;
+	text-align: center;
+	color: white;
+	width: 100%;
+	max-width: 340px;
+	cursor: pointer;
+	padding: 12px;
+	margin-bottom: 42px;
+}
+#sendMailButton:active{
+	outline: none;
+	background-color: green;
+}
+#sendMailButton:focus{
+	outline: none;
+}
+#sendMailButton:hover{
+	background-color: #3A881F;
+	transition: 500ms;
+}
+.iRememberedPasswLink{
+	text-decoration: none;
+	color: #60B642;
+	font-size: 20px;
+}
+.iRememberedPasswLink:hover{
+	text-decoration: underline;
+}
+#enterRegButton{
+	color: #4AAC28;
+	font-size: 24px;
+	text-decoration: none;
+}
+#enterRegButton:hover{
+	text-decoration: underline;
+}
+
+
+
+
+.regIcons{
+	margin:32px auto;
+}
+.mainRegWithMailContainer{
+	display: none;
+	padding-top: 44px;
+}
+.mainRegWithMailExit{
+	cursor: pointer;
+	position: absolute;
+	left: 25px;
+	top: 48px;
+}
+
+.rulesText{
+	margin: 0;
+}
+.radioContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 24px;
+
+}
+.radioContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 34px;
+  width: 34px;
+  border: 1px solid #DE3636;
+  border-radius: 5px;
+}
+.radioContainer input:checked ~ .checkmark {
+  background-color: #4AAC28;
+  border: 1px solid #4AAC28;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radioContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+.radioContainer .checkmark:after {
+  left: 12px;
+  top: 4px;
+  width: 8px;
+  height: 16px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+.promoContainer{
+	margin-top: 38px;
+	margin-bottom: 38px;
+}
+
+.promoInput{
+	margin-left: 16px;
+	max-width: 100px;
+	border: none;
+	border-bottom: 1px solid #8C8787;
+	background-color: #FBFBFB;
+}
+.promoInput:focus{
+	outline: none;
+}
+.promoText{
+	margin: 0;
+
+}
+
+
+/*BuyAsAGiftPage.css*/
+.inputGroup{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 540px;
+	position: relative;
+	text-align: center;
+}
+#closeButtonOuther{
+	width: 100%;
+	text-align: right;
+}
+#closeButton{
+	width: 25px;
+	height: 25px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.label{
+	color: #888888;
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+#mailGiftInput,#nameGiftInput,#messageGiftInput{
+	padding:12px;
+	border: 1px solid #949090;
+	border-radius: 5px;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 113.18%;
+	font-size: 20px;
+
+	width: 100%;
+	box-sizing: border-box;
+}
+#messageGiftInput{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 12px;
+}
+#mailGiftInput:focus,#nameGiftInput:focus,#messageGiftInput:focus{
+	outline: none;
+}
+#mailGiftInput::-webkit-input-placeholder,#nameGiftInput::-webkit-input-placeholder,#messageGiftInput::-webkit-input-placeholder{
+	text-align: center;
+	color: #C7C7C7;
+}	
+#goToPayment{
+	width: 100%;
+	padding-top:12px;
+	padding-bottom: 12px;
+	color: white;
+	background-color: #4EA351;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+
+	cursor: pointer;
+}
+#goToPayment:hover{
+	background-color: #3A881F;
+	transition: 500ms;
+}
+#goToPayment:focus{
+	outline: none;
+}
+.footerText{
+	text-align: center;
+	font-size: 18px;
+	line-height: 113.18%;
+	color: #868181;
+}
+
+.textPass{
+	margin: 12px 0 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 500px){
+	.container{
+		padding: 0;
+		min-height: 100vh;
+	}
+
+	.icons>img{
+	cursor: pointer;
+	width: 18%;
+	}
+	.enter{
+		display: block;
+	}
+
+	.mainRegWithMailExit{
+	left: 12px;
+
+	}
+
+
+
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../static/css/authorisation.css">
+	<title>BuyAsAGift</title>
+
+
+	
+</head>
+<body>
+	<div class="container containerGift">
+		<div class="main mainSmall" id="main">
+			<div id="closeButtonOuther">
+				<img id="closeButton" src="../../static/images/Rectangle59.png" alt="" onclick="closes()">
+			</div>
+			<div class="inputGroup">
+				
+				<h1 class="title titleGift">- Купить в подарок -</h1>
+				<p class="label textGiftLeft">Отправить купон на почту:</p>
+				<input type="text" id="mailGiftInput" required autofocus placeholder="Введите почту">
+
+				<p class="label textGiftLeft">От кого:</p>
+				<input type="text" id="nameGiftInput" required placeholder="Введите имя отправителя">
+
+				<p class="label textGiftLeft">Сообщение</p>
+				<textarea id="messageGiftInput" required placeholder="Введите сообщение (необязательно)"></textarea>
+				<br>
+				<button  id="goToPayment">Перейти к оплате</button>
+
+				<p class="footerText">На введенную почту будет направлена ссылка для распечатки купона<br> (проверяйте папку спам)</p>
+			</div>
+			
+			
+		</div>
+	</div>
+
+
+
+
+
+<script type="text/javascript">
+		function closes(){
+			document.getElementById('main').style.display="none";
+		}
+	</script>
+</body>
+</html>

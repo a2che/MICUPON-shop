@@ -1,0 +1,867 @@
+body{
+  margin: 0;
+  font-family: Source Sans Pro;
+}
+
+.buttonFixedBottom{
+
+  width: 100%;
+  max-width: 460px;
+  background-color: #43A047;
+  color: white;
+  border: none;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+
+}
+.buttonFixedBottom:focus{
+  background-color: #3D9141;
+}
+.buttonFixedBottomContainer{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 30;
+  width: 100%;
+
+}
+
+
+
+
+
+.cardGroup{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card{
+  position: relative;
+  max-width: 290px;
+  margin-bottom: 24px;
+}
+
+.cardImage{
+  margin-bottom: 12px;
+}
+.discount{
+  background-color: #C7FF50;
+  opacity: 50%;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  text-align: center;
+}
+.discountPrice{
+  font-family: Alef;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #585858;
+  margin: 0;
+}
+.favoriteCardIcon{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.cardTouchable{
+  cursor: pointer;
+  z-index: 666;
+}
+.cardText{
+  text-align: justify;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  color: 585858;
+  margin-bottom: 12px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 113.18%;
+}
+.cardInfo{
+  display: flex;
+  justify-content: space-between;
+}
+.metroName,.cardPrice{
+  margin: 0;
+}
+
+
+
+.mainFlexcontainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.mainContainer{
+  width: 100%;
+  max-width: 530px; 
+}
+
+.productTitle{
+  text-align: justify;
+  margin: 0;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 113.18%;
+  color: #585858;
+}
+.productName{
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 113.18%;
+  color: #4AAC28;
+  margin-bottom: 5px;
+}
+.ratingContainer{
+display: flex;
+position: relative;
+
+}
+
+
+
+.ratingStars{
+margin-right: 15px;
+}
+.ratingNumber{
+  margin: 0;
+  padding-top: 2px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 113.18%;
+  color: #847D7D;
+}
+.allAdressesInfo{
+  padding-top: 2px;
+  position: absolute;
+  right: 15px;
+  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 113.18%;
+  text-decoration-line: underline;
+  color: #847D7D;
+}
+.cardImageCont{
+  text-align: center;
+}
+.cardImageBig{
+  text-align: center;
+}
+
+
+
+
+.lowerContainer{
+  width: 100%;
+}
+
+
+.cardMenu{
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+.cardMenu::-webkit-scrollbar {
+display: none;
+}
+.cardMenuItem{
+  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 113.18%;
+  text-align: right;
+  color: #585858;
+  cursor: pointer;
+}
+.cardMenuItem:hover{
+  color: #43A047;
+  text-decoration-line: underline;
+}
+
+.cardMenuItemInfo{
+
+}
+.cardMenucontent{
+  background-color:#FDFDFD;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 2px;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cardMenuText{
+  text-align: justify;
+  font-style: normal;
+
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.cardMenuCollapseToggle {
+  position: relative;
+  color: #46B465;
+  cursor: pointer;
+  padding: 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  background-color: #FDFDFD;
+  margin-bottom: 12px;
+}
+
+.activeCardMenu, .cardMenuCollapseToggle:hover {
+  text-decoration: underline;
+}
+
+.cardMenuCollapseContent {
+  display: none;
+  overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sideContainer{
+  max-width: 385px;
+}
+.actionTimerContainerMobile{
+  display: none;
+  justify-content: center;
+  margin-top: 18px;
+}
+.actionTimerContainer{
+display: flex;
+justify-content: space-between;
+border-bottom: 1px dashed #C3C0C0;
+
+padding-bottom: 8px;
+}
+.timerContent{
+text-align: center;
+
+padding-left: 25px;
+padding-right: 25px;
+}
+.timerContent:first-child{
+  border-right: 1px dashed #C3C0C0;
+
+}
+.timerContent>img{
+  margin-bottom: 6px;
+}
+.timerText{
+  margin: 0;
+  margin-bottom: 12px;
+  max-width: 124px;
+  }
+.timerDuration{
+
+  color: #E1A021;
+  font-weight: 600;
+font-size: 18px;
+line-height: 113.18%;
+}
+
+
+
+
+
+
+.profileHumanIcon{
+    display: none;
+  }
+.chooseCouponModalContainer{
+  width: 100%;
+  max-width: 630px;
+}
+
+.couponCard{
+  padding-bottom: 28px;
+  padding-top: 14px;
+  border-bottom: 1px dashed #C3C0C0;
+}
+.couponCard:last-child{
+  border-bottom: none;
+
+}
+.couponCardNoBorders{
+  border: none !important;
+  padding-top: 40px;
+}
+.couponCardModalGroup:last-child{
+  margin-bottom: 100px;
+}
+
+.chooseCouponContainer{
+  position: relative;
+}
+.chooseCouponTitle{
+  margin-bottom: 0;
+  margin-top: 8px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 113.18%;
+  color: #585858;
+}
+
+
+.radioContainer {
+  text-align: justify;  
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #585858;
+  padding-bottom: 14px;
+  
+}
+
+/* Hide the browser's default radio button */
+.radioContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border:2px solid #607D8B;
+  border-radius: 50%;
+}
+.radioContainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.radioContainer input:checked ~ .checkmark {
+  background-color: white;
+  border:2px solid #43A047;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radioContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+.radioContainer .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #43A047;
+}
+
+
+.couponCardPrice{
+  display: flex;
+  padding-left: 35px !important;
+}
+.previousPrice{
+  margin: 0;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  padding-top: 2px;
+  text-decoration-line: line-through;
+  color: #9C9B9B;
+  margin-right: 14px;
+}
+.realPrice{
+  margin: 0;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 113.18%;
+  align-items: center;
+  text-align: justify;
+  color: #585858;
+}
+.couponPrice{
+  margin: 0;
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 113.18%;
+  text-align: center;
+  color: #46B465;
+  position:absolute;
+  right: 0;
+}
+.cashbackContainer{
+
+}
+.cashbackPrice{
+  margin: 0;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 113.18%;
+  align-items: center;
+  text-align: justify;
+  color: #DD9200;
+  position:absolute;
+  right: 15px;
+}
+
+
+.showAllCouponsButton{
+  color: #7D7D7D;
+  text-decoration: underline;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 113.18%;
+  text-align: center;
+  text-indent: 3px;
+  cursor: pointer;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 26px;
+  margin-top: 10px;
+}
+
+
+.goToPayButton{
+  
+  background-color: #43A047;
+  
+}
+.goToPayButton>img{
+  margin-right: 20px;
+  padding-top: 4px;
+}
+.goToPayButton:focus{
+  outline: none;
+  border: none;
+}
+.goToPayButton:active{
+  background-color: #3C8E40;
+}
+
+.buyAsPresentButton{
+  background-color: #E5AA0F;
+
+}
+.buyAsPresentButton>img{
+  margin-right: 20px;
+  padding-top: 4px;
+}
+.buyAsPresentButton:focus{
+  outline: none;
+  border: none;
+}
+.buyAsPresentButton:active{
+  background-color: #D59D0E;
+}
+.buyAsPresentButton,.goToPayButton{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  line-height: 15px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+
+
+
+
+
+.modalDialog{
+  border: none;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 50px;
+  z-index: 55555;
+}
+.modalContent{
+      position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+    padding: 24px;
+}
+
+
+.modalButtonContainer{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+}
+.goToPayButtonModal{
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  margin-bottom: 75px;
+  z-index: 10000;
+}
+
+
+
+.couponCardCollapseToggleContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.couponCardModalGroup{
+  padding:  4px 0 !important;
+}
+
+.cardCollapseOffers{
+  margin: 0;
+  position: absolute;
+  right:  64px;
+  color: #585858;
+  font-size: 18px;
+  z-index: 666;
+  padding-top: 6px;
+
+}
+
+.couponCardBorder{
+  float: right;
+  margin-top: 40px;
+  width: 94%;
+  height: 1px;
+  border-bottom: 1px dashed #C3C0C0;
+}
+
+/*collapse*/
+
+.couponCardCollapseToggle:not(:first-child){
+  border-bottom: 1px solid #DADADA;
+  
+}
+
+.couponCardCollapseToggle {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  color: #46B465;
+  position: relative;
+  
+  background-color: white;
+  padding:  8px 0;
+
+}
+.couponCardCollapseToggleButton{
+  border: none !important;
+}
+.collapseCouponCardContent {
+  display: none;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shareIconsContainer{
+  position: relative;
+  margin-bottom: 34px;
+}
+.shareIconsList{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.shareIconsTitle{
+  color: #7D7D7D;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 113.18%;
+  text-align: center;
+  text-indent: 3px;
+  margin: 0;
+}
+.shareIcon{
+  text-align: center;
+}
+.shareIconImage{
+  width: 45px;
+  margin: 24px;
+  cursor: pointer;
+}
+.shareIconImage:first-child,.shareIconImage:nth-child(5){
+  margin-left: 0;
+}
+.shareIconImage:nth-child(4),.shareIconImage:last-child{
+  margin-right: 0;
+}
+
+
+
+.shareIconsListMobile{
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  display: none;
+  justify-content: space-between;
+  border-top:1px dashed #C3C0C0;
+  border-bottom:1px dashed #C3C0C0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.shareIconImageMobile{
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+.shareIconImageMobile{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.adContainerA{
+  margin-bottom: 24px;
+}
+.adContainerA>img{
+  width:  100%;
+
+}
+.adContainerB{
+  background-color:#C4C4C4;
+  height: 150px;
+  width: 100%;
+}
+
+.lowerContainerItem{
+  margin-bottom: 56px;
+}
+.lowerContainerItem:last-child{
+  margin-bottom: 0;
+}
+.contentTitle{
+  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 113.18%;
+  color: #585858;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(153, 153, 153, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.actionTimerContainerMobile>.timerContent>.timerDuration{
+  color: #4AAC28;
+}
+
+.adressesCard{
+
+  min-width: 100%;
+  display: flex;
+  overflow-x: scroll;
+}
+.adressesCard::-webkit-scrollbar {
+display: none;
+}
+
+
+.adressesContent{
+  min-width: 300px;
+}
+.adressesText{
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 113.18%;
+  color: #585858;
+  margin: 0;
+  margin-bottom: 12px;
+}
+.adressesTextBold{
+  font-weight: 700;
+}
+.metroSpan{
+  font-weight: bolder;
+  color: #8B8B8B;
+  font-size: 16px;
+}
+.reviewsText{
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 113.18%;
+  color: #585858;
+}
+.AboutCompanyText{
+  
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 113.18%;
+color: #585858;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

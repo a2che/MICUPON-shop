@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="../../static/css/authorisation.css">
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="main mainSmall" id="main">
+			<div id="closeButtonOuther">
+				<img id="closeButton" src="../../static/images/Rectangle59.png" alt="" onclick="closes()">
+			</div>
+			<img id="logo" src="../../static/images/МiKupon.png" alt="">
+			<p class="title">- Регистрация -</p>
+			<input id="mailInput" type="text"  placeholder="Введите почту" onclick="
+
+			document.getElementById('mainRegWithMailContainer').style.display='block';
+			document.getElementById('main').style.display='none';
+
+			">
+			
+			<p class="allText text1">или</p>
+			<p class="allText text2">зарегистрироваться через соцсети:</p>
+			<div class="flex icons regIcons">
+				<img src="../../static/images/vkIcon.png" alt="">
+				<img src="../../static/images/ondoklassnikiIcon.png" alt="">
+				<img src="../../static/images/fbIcon.png" alt="">
+			</div>
+			<div class="enter">
+				<p class="allText">Уже зарегистрированы?</p>
+				<p class="allText">
+					<a id="enterRegButton" href="authorisation.html">Войти</a>
+				</p>
+			</div>
+		</div>
+		<div class="mainRegWithMailContainer mainSmall" id="mainRegWithMailContainer">
+			<img class="mainRegWithMailExit" src="../../static/images/arrowLeft.png" alt="" onclick="
+			document.getElementById('mainRegWithMailContainer').style.display='none';
+			document.getElementById('main').style.display='block';
+			">
+			<img id="logo" class="mainRegWithMailLogo" src="../../static/images/МiKupon.png" alt="">
+			<p class="title">- Регистрация по почте -</p>
+			<input id="mailInput" type="text"  placeholder="Введите почту">
+			<div class="flex">
+                <label class="radioContainer">
+  					<input type="checkbox" checked="checked">
+  					<span class="checkmark"></span>
+				</label>
+				<p class="rulesText">
+					Согласие с условиями 
+					<br>
+					<a href="#" class="rulesLink">Оферты</a>
+					и
+					<a href="#" class="rulesLink">Правилами</a>
+				</p>
+			</div>
+			<div class="flex promoContainer">
+				<p class="alltext promoText">Промокод (если есть)</p>
+				<input type="text" class="promoInput">
+			</div>
+			<button class="enterButton enterButtonBig" type="button">Зарегистрироваться</button>
+			
+			
+			
+		</div>
+	</div>
+
+
+
+
+
+
+</body>
+</html>

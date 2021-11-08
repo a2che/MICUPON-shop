@@ -1,0 +1,473 @@
+@media(max-width: 1150px){
+	.buttonScrollUp{
+		display: none !important;
+	}
+	.toFavoriteButton{
+		display: none;
+	}
+	.reviewsText{
+		padding-left: 15px;
+	}
+	.adressesContent:first-child{
+		padding-left: 15px;
+	}
+	.AboutCompanyText{
+		padding-left: 15px;
+	}
+	.contentTitle{
+		padding-left: 15px;
+	}
+}
+
+
+@media(max-width: 965px){
+	.sliderContainer{
+		margin:  0 30px;
+		width: auto ;
+		margin-bottom: 32px;
+	}
+	.authRegFormContainer,.hTopRNav{
+		margin-right: 30px;
+	}
+	.dropdownToggle:last-child{
+		padding-right: 30px;
+	}
+
+	.hNavSearchContainer,.miKupon,.navNameContainer,.filterName{
+		padding-left: 30px;
+	}
+	.categoryContainer{
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+}
+@media(max-width: 900px){
+	.hTopRNav{
+		margin-right: 0;
+	}
+	.miKupon{
+		padding-left: 0;
+	}
+	.timerContent:first-child{
+		padding-right: 12% ;
+	}
+	.timerContent:last-child{
+		padding-left: 12% ;
+	}
+
+	.cardGroupProductPage{
+		justify-content: center;	
+	}
+	.adressesContent{
+		width: 200px;
+	}
+	.lowerContainer{
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.productTitle,.productName,.ratingContainer,.cardImageCont{
+		padding: 0 15px;
+		text-align: left;
+	}
+	.shareIconsListMobile{
+
+	}
+	.ratingNumber{
+		display: none;
+	}
+	.filterName{
+		padding-left: 30px;
+}
+	.footer{
+	  padding-bottom: 74px;
+	}
+	.filterGroups{
+		overflow: scroll;
+	}
+	.navName>span{
+  		display: none;
+	}
+	.navNameArrow{
+		display: block;
+	}
+	.buttonFixedBottomContainer{
+	  display: flex;
+
+	}
+
+	.actionTimerContainerMobile{
+		display: flex;
+	}
+	.actionTimerContainer{
+		display: none;
+	}
+	.chooseCouponAllContainer{
+		display: none;
+	}
+	.adContainerA{
+		display: none;
+	}
+	.adContainerB{
+		display: none;
+	}
+	.shareIconsTitle{
+		display: none;
+	}
+	.shareIconsList{
+		display: none;
+	}
+	.shareIconsListMobile{
+		display: flex;
+	}
+	.shareIconImageMobile{
+
+	}
+
+	.hTopRNav{
+		position: relative;
+		justify-content: center;
+	}
+	.authRegFormContainerMobile{
+		display: block;
+	}
+	.hTopSubNav{
+		margin-bottom: 0;
+		justify-content: space-between;
+	}
+	.hTopContainer{
+		display: none;
+	}
+	.navNameContainer{
+		padding-left: 30px;
+		padding-right: 30px;
+		flex-grow: 1;
+		
+	}
+	
+	.hNavSearchContainer{
+		display: none;
+	}
+
+	.hNavSearchContainerMobile{
+		margin-left: auto;	
+		display: flex;	
+		width: 100%;
+		margin-left: 132px;
+	}
+	.hTopSityLink{
+		text-align: left;
+
+		padding-left: 15px;
+		flex-grow: 1;
+
+	}
+
+	.hTopContainer{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#mainLogo{
+		margin-left: 30px;
+		text-align: center;
+	}
+	
+
+	.card{
+
+		width: 	100%;
+	}
+
+	.mainFlexcontainer{
+		display: 	flex;
+		justify-content: center;	
+	}
+	.cardImageBig{;
+		width: 	100%;
+	}
+
+	.sideContainer{
+		width: 	100%;
+	}
+
+	.footerFlex{
+		justify-content: center;
+	}
+	.footerInfo{
+		margin-bottom: 12px;
+	}
+	.footerNavContainer{
+		justify-content: space-between;
+	}
+	.footerNavItem{
+		margin-bottom: 24px;
+	}
+	
+	.container{
+
+	}
+	.dropdownToggle{
+		display: none;
+	}
+
+	.categoryDropdownToggle {
+    position: relative;
+    display: inline-block;
+	}
+	.hTopRNav{
+		padding-right: 30px;
+		padding-left: 0;
+
+	}
+
+	.categoryDropdownToggle:hover .categoryDropdownContent{
+	    display: block;
+	}
+
+	
+	.sityNameMobile{
+		display: block !important;
+		margin-left: auto;
+	}
+
+}
+
+@media(max-width: 779px){
+	.hNavSearchContainer{
+		margin-bottom: 24px;
+	}
+}
+
+@media(max-width: 732px){
+	.hNavSearchContainerMobile{
+		margin-left: 152px;
+	}
+	.hTopSityLink{
+		margin-left: 0;
+		padding-left: 0;
+	}
+	.miKupon{
+		display: none;
+	}
+	.miKuponLittle{
+		display: block;
+	}
+
+	.categoryContainer{
+		border-bottom: 1px solid #F5F5F5;
+	}
+	.footerFlex{
+		padding: 24px;
+	}
+	.footerNavItem{
+  		width: 45%;
+
+	}
+	.footerLink{
+		text-align: left;
+	}
+	.profileHumanIcon{
+		display: block;
+		
+	}
+	.modalDialog{
+		margin: 0;
+		max-width: none;
+	}
+	
+	
+
+}
+@media(max-width: 680px){
+	.hNavSearchContainerMobile{
+		width: auto;
+		margin-left: auto;
+	}
+
+	.authRegFormContainer{
+		max-width: none;
+		margin-bottom: 32px;
+	}
+}
+@media(max-width: 632px){
+
+}
+@media(max-width: 	587px){
+		.forUsersLink{
+		display: none;
+	}
+	.forPartnersLink{
+		display: none;
+	}
+	.hTopMenuToggle{
+		display: block;	
+	}
+	.hTopRNav{
+		padding-top: 	24px;
+	}
+	.navName{
+		display: none;
+	}
+	.filterName{
+		display: block !important;
+	}
+	.navNameArrow{
+		display: none;
+	}
+	.hNavSearchContainerMobile{
+		width: 100%;
+		margin-left: 0;
+	}
+}
+@media(max-width: 580px){
+
+	.categoryName{
+		padding-left: 15px;
+	}
+		.cardGroup{
+		justify-content: center;
+	}
+}
+@media(max-width: 575px){
+
+	
+	
+
+	.modal-dialog {
+		margin: 0;
+		height: 100vh;
+	}
+	.modal-content{
+		height: 100%;
+		border: none;
+
+	}
+	.cardMenu{
+		padding: 0 15px;
+	}
+	.cardMenuItem:not(:last-child){
+		padding-right: 8px;
+	}
+	
+	
+}
+@media(max-width: 520px){
+
+	.shareIconImageMobile{
+		width: 10%;
+		padding: 16px; 
+		height: auto;
+	}
+}
+@media(max-width: 504px){
+	.cardCollapseOffers{
+		position: static;
+	}
+
+}
+@media(max-width: 438px){
+	.cardMenuItem{
+		min-width: 138px;
+		text-align: center;
+		padding-right: 0 !important;
+	}
+	.hTopRNav{
+		padding-right: 	15px;
+	}
+	#mainLogo{
+		margin-left: 	15px;
+	}
+	.navNameContainer{
+		padding-left: 15px 	;
+		padding-right: 15px 	;
+	}
+	.filterName{
+		padding-left: 	15px;
+	}
+	.hTopSubNav{
+		flex-wrap: nowrap;
+	}
+
+	.hNavSearchContainerMobile{
+		margin-left: auto;
+
+
+	}
+
+	.miKuponLittle{
+		max-width: 120px;
+	}
+	.pagination{
+		padding-left: 0;
+	}
+	.pageItem:nth-child(3),.pageItem:nth-child(4),.pageItem:nth-child(5){
+		display: none;
+	}
+
+}
+
+@media(max-width: 376px){
+	.timerContent:first-child{
+		padding-right:  25px;
+	}
+	.timerContent:last-child{
+		padding-left: 25px;
+	}
+	.hNavSearchButton{
+		display: none;	
+	}
+	.sityName{
+		display: none;
+	}
+	.hNavSearch{
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+
+	.shareIconImageMobile{
+		width: 12%;
+		padding: 6px; 
+		height: auto;
+	}
+	.categoryName{
+		padding-left: 15px;
+	}
+	.categoryContainer{
+		padding: 0;
+	}
+	.hTopRNav{
+		
+	}
+
+	.couponCardPrice{
+		padding: 0;
+	}
+	
+	.modal-body{
+		padding: 0;
+	}
+
+	
+}
+@media(max-width: 326px){
+	.hNavSearchContainerMobile{
+		padding: 0;
+
+	}
+}
+@media(min-width: 900px){
+	.footerNavItem{
+  		padding-left: 12px;
+	}
+	.disabledLink{
+  		pointer-events: none;
+   		cursor: default;
+		}
+}
+
+
+
+
+

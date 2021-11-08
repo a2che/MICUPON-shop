@@ -1,0 +1,8 @@
+@media(max-width: 900px){
+	.adContainerA{
+		display: none;
+	}
+	.adContainerB{
+		display: none;
+	}
+}
